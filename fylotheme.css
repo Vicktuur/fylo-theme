@@ -1,0 +1,305 @@
+body{
+    background:hsl(218, 28%, 13%) ;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.background-image{
+    width: 100%;
+    height: 103%;
+    color: hsl(0, 0%, 100%);
+    background-image: url(C:\Users\ASUS\Pictures\bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    left: 8px;
+    top: 163%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-family: "Raleway",sans-serif;
+}
+.item{
+    padding-top: 50px;
+    margin: 25px;
+    font-size: 25px;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    padding: 50px;
+    float: left;
+}
+.intro-image{
+    margin-top: 100px;
+}
+.intro-page{
+   background: hsl(217, 28%, 15%); 
+}
+.intro{
+    position: relative;
+    z-index: 2;
+}
+.intro h1{
+    margin: 60px auto; 
+    margin-top: 150px;
+    font-size: 3.5em;
+    line-height: 3.5rem;
+    width:700px;
+    font-family: "Raleway",sans-serif;
+}
+.intro-page p{
+    margin: 30px auto; 
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    width:600px;
+}
+.nav .item a:hover{
+    text-decoration: underline;
+    color: rgb(12, 175, 250);
+}
+.intro button{
+    margin-top: 40px;
+    padding: 20px 100px;
+    color:white;
+    background: linear-gradient(120deg,hsl(176,68%,64%),hsl(198,60%,50%));
+    border-radius: 50px;
+    border: none;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size:xx-large;
+    cursor: pointer;
+    margin-bottom: 250px;
+}
+.intro button:hover{
+    background: rgb(3, 255, 238);
+}
+.points{
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
+.points article{
+    margin: 20px auto;
+}
+.points article h2{
+    font-family: "Raleway",sans-serif ; 
+    margin: 20px auto; 
+    font-size: 2.0em;
+    line-height: 3.5rem;
+    width:700px;
+}
+.points article p{
+    margin: 15px auto; 
+    font-size: 1.2em;
+    line-height: 2.0rem;
+    width:450px;
+}
+.section-three img {
+    margin: 80px 20px 50px 100px;
+    float: left;
+}
+.productive-text{
+    margin-left: 780px;
+    margin-right: 150px;
+}
+.productive-text h1 {
+    padding-top: 200px;
+    line-height: 3rem;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+.productive-text p {
+    margin-top: 20px;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 480px;
+}
+.productive-text a {
+    color:cyan;
+    float: left;
+}
+.productive-text #link:hover {
+    color:white;
+}
+.arrows{
+    display: flex;
+    margin-top: 30px;
+}
+#arr{
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.section-four{
+    clear: both;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.section-four article {
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom:30px;
+    width: 330px;
+    height: 120px;
+    background: hsl(219,30%,18%);
+    margin-left: 40px;
+}
+.section-four .text {
+    margin-top: 1px;
+    margin-bottom: 30px;
+    line-height: 18px;
+    width: px;
+    font-size: 15px;
+    text-align: left;
+}
+.section-four .person {
+    margin-left: 35px;
+    margin-bottom: 1px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+.section-four .role {
+    font-size: 8px;
+    margin-top: 4px;
+    margin-left: 35px;
+    text-align: left;
+}
+.section-four .image {
+    width: 25px;
+    border-radius: 50%;
+    float: left;
+}
+.quote{
+    position: absolute;
+    transform: translate(-170px, -75px);
+    z-index: -1;
+}
+.start{
+    background: hsl(217, 28%, 15%);
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    height: 250px;
+    width: 10in;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.75);
+}
+.start h2{
+    font-family: "Raleway","sans-serif";
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.start p{
+    width: 600px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+.start input{
+    /*padding: 15px 0 15px 300px;*/
+    width:50%;
+    height:50px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+.start input::placeholder{
+    opacity: 0.5; 
+}
+.start button{
+    border-radius: 50px;
+    width:20%;
+    height:50px;
+    /*padding: 15px 40px 15px 0;*/
+    border: none;
+    color: white;
+    background: linear-gradient( hsl(176,68%,64%),hsl(198,60%,50%));
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.start button:hover{
+    background: rgb(3, 255, 238);
+}
+footer{
+    background: hsl(216, 53%, 9%);
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+footer section{
+    display: flex;
+    clear: both;
+}
+ul{
+    list-style-type: none;
+    color: white;
+}
+footer img{
+    margin-left: 30px;
+}
+footer .one {
+    line-height: 25px;
+    width: 350px;
+    margin-left: 55px;
+    margin-right: 60px;
+}
+footer .one img {
+    float:left;
+}
+footer .one p{
+    margin-left: 70px;
+    margin-top: -5px;
+    text-align: left;
+}
+footer .two {
+    width: 350px;    
+}
+footer .two img {
+    float: left;
+}
+footer .two p {
+    margin-bottom: 20px;
+}
+footer .three, footer .four{
+    width: 110px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(12, 175, 250);
+}
+footer li {
+    margin-bottom: 20px;
+}
+footer .five{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+footer .five img  {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
