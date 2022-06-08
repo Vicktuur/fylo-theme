@@ -1,3 +1,4 @@
+/* Desktop view only*?
 body{
     background:hsl(218, 28%, 13%) ;
     color: white;
@@ -302,81 +303,4 @@ footer .five img  {
     margin-left: 10px;
     border-radius: 50px;
     border: 2px solid white;
-}
-
-/*mobile view*/
-@media screen and (max-width: 480px){
-    .nav{
-        width: 50%;
-        justify-content: none;
-    }
-    .logo{
-        width: 90px;
-        height: 40px;
-    }
-    .nav ul li{
-        margin-left: -20px;
-    }
-    .intro-image img{
-        width: 80%;
-    }
-    /* The showcase, contains icons  */
-    .background-image{
-    width: 100%;
-    background-image: url(images/bg-curvy-mobile.svg);
-    background-repeat: no-repeat;
-    }
-    .points{
-        padding-top: 150px;
-        grid-template-columns: 1fr;
-    }
-    .section-three{
-        grid-template-columns: 1fr;
-    }
-    .stay-productive-icon{
-        height: 200px;
-        width: 300px;
-    }
-    .productive-text{
-        margin-left: 50px;
-    }
-    .section-four{
-        grid-template-columns: 1fr;
-    }
-    .start p{
-        width: 90%;
-        padding-right: 100px;
-    }
-    .inner-access{
-        width: 300px;
-        position: relative;
-        right:70px;
-    }
-    #button{
-        display: block;
-        margin-top: 10px;
-        margin-left: 10px;
-        padding-left: 80px;
-        padding-right:80px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        width: 300px;
-        position: relative;
-        right: 80px;
-    }
-    input{
-        width: 300px;
-        position: relative;
-        right:70px;
-    }
-    footer section{
-        grid-template-columns: 1fr;
-    }
-    footer section p{
-        width: 80%;
-        margin-bottom: -50px;
-    }
-    footer .five{
-        text-align: center;
-    }
 }
