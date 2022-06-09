@@ -14,7 +14,7 @@ body{
     position: absolute;
     z-index: 1;
     left: 8px;
-    top: 172%;
+    top: 166%;
 }
 .nav{
     display: flex;
