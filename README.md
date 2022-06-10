@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./images/FireShot Capture 002 - Capstone-project.jpg]
+![./images/FireShot Capture 002 - Capstone-project.jpg]()
 
 
 ### Links
