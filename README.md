@@ -1,4 +1,3 @@
-
 # Frontend Mentor - Fylo dark theme landing page solution of the (Desktop site only)
 
 This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -25,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/FireShot Capture 002 - Capstone-project.jpg)
+![images/FireShot Capture 002 - Capstone-project.jpg]()
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Vicktuur/fylo-theme)
-- Live Site URL: [Add live site URL here](https://abiyesite1.netlify.app)
+- Solution URL: [https://github.com/Vicktuur/fylo-theme]
+- Live Site URL: [https://abiyesite1.netlify.app]
 
 ## My process
 
@@ -44,5 +43,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Vicktuur)
-- Twitter - [@yourusername](https://www.twitter.com/Victor_Abiye)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/Vicktuur]
+- Twitter - [https://www.twitter.com/Victor_Abiye]
