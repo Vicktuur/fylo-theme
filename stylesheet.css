@@ -1,304 +1,432 @@
+/* Desktop view*/
+*{
+    box-sizing: border-box;
+}
+/* The Body */
 body{
-    background:hsl(218, 28%, 13%) ;
+    margin: 0;
+    padding: 0;
+    background:hsl(217, 28%, 15%) ;
     color: white;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    text-align: center;
-}
-.background-image{
     width: 100%;
-    height: 103%;
-    color: hsl(0, 0%, 100%);
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 1;
-    left: 8px;
-    top: 166%;
 }
-.nav{
+/* The Navigation menu */
+.nav-bar{
+    width: 95%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 30px;
-    font-family: "Raleway",sans-serif;
+    justify-content: space-between;
+    margin-top: 50px;
 }
-.item{
-    padding-top: 50px;
-    margin: 25px;
-    font-size: 25px;
+.header-logo{
+    padding-left: 40px;
 }
-.item a{
-    color: white;
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav ul a{
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 50px;
+    color: hsl(0, 0%, 100%);
 }
-.logo{
-    padding: 50px;
-    float: left;
+.nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(12, 175, 250);
 }
-.intro-image{
-    margin-top: 100px;
+/* Introductory illustration */
+.illustration-intro{
+    margin-top: -100px;
+    position: relative;
+    top: 200px;
 }
-.intro-page{
-   background: hsl(217, 28%, 15%); 
+.intro-image {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro{
-    position: relative;
-    z-index: 2;
+    text-align: center;
 }
 .intro h1{
-    margin: 60px auto; 
-    margin-top: 150px;
-    font-size: 3.5em;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 2.5em;
     line-height: 3.5rem;
     width:700px;
     font-family: "Raleway",sans-serif;
 }
-.intro-page p{
-    margin: 30px auto; 
-    font-size: 1.5em;
-    line-height: 2.5rem;
-    width:600px;
-}
-.nav .item a:hover{
-    text-decoration: underline;
-    color: rgb(12, 175, 250);
+.intro p{
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1.2em;
+    line-height: 1.8rem;
+    width:550px;
 }
 .intro button{
-    margin-top: 40px;
-    padding: 20px 100px;
+    padding: 15px 60px;
     color:white;
     background: linear-gradient(120deg,hsl(176,68%,64%),hsl(198,60%,50%));
     border-radius: 50px;
     border: none;
     font-family: "Raleway",sans-serif;
-    font-weight: 700;
-    font-size:xx-large;
+    font-size:large;
     cursor: pointer;
-    margin-bottom: 250px;
 }
 .intro button:hover{
     background: rgb(3, 255, 238);
 }
-.points{
+/* Curved background image and grided icons */
+.background-body {
+    width: 100%;
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+}
+.inner-background-image {
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+.points {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 150px;
+    margin-top: 400px;
+    margin-bottom: 80px;
 }
-.points article{
-    margin: 20px auto;
+/* Productivity section */
+.section-three {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 95%;
+    gap: 100px;
+    margin-bottom: 80px;
+    justify-content: center;
 }
-.points article h2{
-    font-family: "Raleway",sans-serif ; 
-    margin: 20px auto; 
-    font-size: 2.0em;
-    line-height: 3.5rem;
-    width:700px;
+.productive-image {
+    margin-left: 60px;
 }
-.points article p{
-    margin: 15px auto; 
-    font-size: 1.2em;
-    line-height: 2.0rem;
-    width:450px;
-}
-.section-three img {
-    margin: 80px 20px 50px 100px;
-    float: left;
-}
-.productive-text{
-    margin-left: 780px;
-    margin-right: 150px;
+.productive-text {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .productive-text h1 {
-    padding-top: 200px;
-    line-height: 3rem;
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    width: 300px;
     font-family: "Raleway", sans-serif;
-    text-align: left;
-}
-.productive-text p {
-    margin-top: 20px;
-    line-height: 1.5rem;
-    margin-bottom: 10px;
-    text-align: left;
-    width: 480px;
 }
 .productive-text a {
-    color:cyan;
-    float: left;
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
 }
-.productive-text #link:hover {
-    color:white;
+.productive-text a:hover{
+    color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
 }
-.arrows{
-    display: flex;
-    margin-top: 30px;
+/* Profile section */
+.quote {
+    margin-left: 120px;
 }
-#arr{
-    margin-top: 0px;
-    margin-left: 5px;
-}
-.section-four{
-    clear: both;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
-}
-.section-four article {
-    padding: 25px;
-    padding-top: 40px;
-    padding-bottom:30px;
-    width: 330px;
-    height: 120px;
-    background: hsl(219,30%,18%);
-    margin-left: 40px;
-}
-.section-four .text {
-    margin-top: 1px;
-    margin-bottom: 30px;
-    line-height: 18px;
-    width: px;
-    font-size: 15px;
-    text-align: left;
-}
-.section-four .person {
-    margin-left: 35px;
-    margin-bottom: 1px;
-    font-size: 10px;
-    font-weight: 700;
-    text-align: left;
-}
-.section-four .role {
-    font-size: 8px;
-    margin-top: 4px;
-    margin-left: 35px;
-    text-align: left;
-}
-.section-four .image {
-    width: 25px;
-    border-radius: 50%;
-    float: left;
-}
-.quote{
-    position: absolute;
-    transform: translate(-170px, -75px);
-    z-index: -1;
-}
-.start{
-    background: hsl(217, 28%, 15%);
+.inner-quotes {
     position: relative;
-    top: 100px;
-    z-index: 1;
-    height: 250px;
-    width: 10in;
-    text-align: center;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.75);
+    bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
 }
-.start h2{
+.inner-quotes article {
+    background-color: hsl(219, 30%, 18%);
+    padding: 20px;
+    box-shadow: 10px 10px 20px hsl(216, 53%, 9%);
+    border-radius: 2%;
+}
+.profile {
+    display: flex;
+}
+.image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.role1 {
+    margin-left: -85px;
+    margin-top: 25px;
+    font-size: 12px;
+}
+.role2 {
+    margin-left: -115px;
+    margin-top: 25px;
+    font-size: 12px;
+}
+.role3 {
+    margin-left: -60px;
+    margin-top: 25px;
+    font-size: 12px;
+}
+/* Sign-in section */
+.sign-in {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    top: 320px;
+    box-shadow: 10px 10px 20px hsl(216, 53%, 9%);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.sign-in h2{
     font-family: "Raleway","sans-serif";
     font-size: 30px;
     font-weight: bold;
-    padding-top: 30px;
+    margin-top: -10px;
     margin-bottom: 25px;
 }
-.start p{
+.sign-in-text {
     width: 600px;
     margin: 0px auto;
     margin-bottom: 30px;
     line-height: 20px;
 }
-.start input{
-    /*padding: 15px 0 15px 300px;*/
-    width:50%;
-    height:50px;
-    border-radius: 50px;
+input{
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
     border: none;
-    margin-top: 10px;
     margin-right: 20px;
-    text-align: left;
-    padding-left: 40px;
 }
-.start input::placeholder{
-    opacity: 0.5; 
-}
-.start button{
-    border-radius: 50px;
-    width:20%;
-    height:50px;
-    /*padding: 15px 40px 15px 0;*/
-    border: none;
-    color: white;
+#button{
+    padding: 10px 40px 10px 40px;
     background: linear-gradient( hsl(176,68%,64%),hsl(198,60%,50%));
-    font-family: "Raleway",sans-serif;
-    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
-.start button:hover{
+#button:hover{
     background: rgb(3, 255, 238);
 }
+/* Footer section*/
 footer{
-    background: hsl(216, 53%, 9%);
-    padding-top: 150px;
-    padding-bottom: 120px;
+    background-color: hsl(216, 53%, 9%);
 }
-footer section{
+.main-footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    font-size: 14px;
+    padding-bottom: 100px;
+}
+.inner-footer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+.location {
+    width: 400px;
     display: flex;
-    clear: both;
+    margin-top: 20px;
 }
-ul{
-    list-style-type: none;
-    color: white;
+.footer-logo {
+    margin-left: -40px;
 }
-footer img{
-    margin-left: 30px;
+.location-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
-footer .one {
-    line-height: 25px;
-    width: 350px;
-    margin-left: 55px;
-    margin-right: 60px;
-}
-footer .one img {
-    float:left;
-}
-footer .one p{
-    margin-left: 70px;
+.location p {
     margin-top: -5px;
-    text-align: left;
+    width: 300px;
 }
-footer .two {
-    width: 350px;    
+.contact{
+    cursor: pointer;
 }
-footer .two img {
-    float: left;
+.contact img {
+    padding-right: 12px;
 }
-footer .two p {
-    margin-bottom: 20px;
+.info ul li, .contact-links ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
-footer .three, footer .four{
-    width: 110px;
-}
-footer a {
-    color: white;
+.info ul li a, .contact-links ul li a{
     text-decoration: none;
+    color: white;
 }
-footer a:hover{
-    text-decoration: underline;
-    color: rgb(12, 175, 250);
-}
-footer li {
-    margin-bottom: 20px;
-}
-footer .five{
-    margin-top: 10px;
-    margin-left: 100px;
-}
-footer .five img  {
-    width: 30px;
-    height: auto;
-    margin-left: 10px;
+/*Social media icons */
+.fa {
+    padding: 10px;
+    text-decoration: none;
+    margin: 5px 2px;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 1px solid white;
+    color: white;
+}
+.info ul li a:hover, .contact-links ul li a:hover, .fa:hover {
+    color: rgb(3, 255, 238);
+}
+
+/* Mobile view*/
+@media (max-width: 480px){
+    
+    /* The Navigation menu */
+    .nav-bar{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .header-logo{
+        width: 35%;
+        height: 40%;
+    }
+    .nav ul li{
+        margin-left: -20px;
+    }
+    /* Introductory illustration */
+    .illustration-intro{
+        margin-top: -100px;
+        position: relative;
+        top: 200px;
+        margin-bottom: -50%;
+    }
+    .intro-image img{
+        width: 80%;
+    }
+    .intro h1{
+        margin-left: auto; 
+        margin-right: auto;
+        font-size: 2.0em;
+        line-height: 3.0rem;
+        width: 85%;
+        font-family: "Raleway",sans-serif;
+    }
+    .intro p{
+        margin-left: auto; 
+        margin-right: auto; 
+        font-size: 1.2em;
+        line-height: 1.8rem;
+        width:85%;
+    }
+    /* Curved background image and grided icons */
+    .background-body {
+        width: 100%;
+        background-image: url(images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .points{
+        grid-template-columns: 1fr;
+        padding-top:100%;
+        margin-top: 30%;
+        margin-bottom: 80px;
+    }
+    /* Productivity section */
+    .section-three {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85%;
+        gap: 10px;
+        margin-bottom: 30%;
+        justify-content: center;
+    }
+    .productive-image {
+        width: 85%;
+    }
+    .productive-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    .productive-text h1 {
+        font-size: 20px;
+        width: 95%;
+        font-family: "Raleway", sans-serif;
+    }
+    /* Profile section */
+    .quote {
+        margin-left: 70px;
+    }
+    .inner-quotes {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin-bottom: -30%;
+    }
+    /* Sign-in section */
+    .sign-in {
+        width: 90%;
+        top: 370px;
+    }
+    .sign-in h2{
+        font-size: 25px;
+    }
+    .sign-in-text {
+        width: 80%;
+        line-height: 25px;
+    }
+    input{
+        width: 80%;
+        padding: 20px 40px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+    #button{
+        padding: 20px 40px;
+        width: 80%;
+        border-radius: 50px;
+    }
+    /* Footer section*/
+    .main-footer {
+        padding-top: 250px;
+        padding-bottom: 40px;
+    }
+    .inner-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-bottom: 0px;
+    }
+    .footer-logo {
+        margin-left: 0px;
+        padding-bottom: 40px;
+    }
+    .location p {
+        width: 90%;
+        line-height: 1.5rem;
+    }
+    .contact{
+        margin-top: -15%;   
+    }
+    .contact img {
+        padding-right: 20px;
+    }
+    .info , .contact-links  {
+        margin-left: -10%;
+    }
+    /*Social media icons */
+    .social-media {
+        text-align: center;
+    }
+
 }
