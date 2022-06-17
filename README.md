@@ -21,8 +21,8 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-![](/image/Desktop-view-Capstone-project.png)
-![](/image/Mobile-view-Capstone-project.png)
+![](./image/Desktop-view-Capstone-project.PNG)
+![](./image/Mobile-view-Capstone-project.PNG)
 
 ### Links
 
