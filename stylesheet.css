@@ -314,17 +314,16 @@ footer{
     .intro h1{
         margin-left: auto; 
         margin-right: auto;
-        font-size: 2.0em;
+        font-size: 1.8em;
         line-height: 3.0rem;
-        width: 85%;
-        font-family: "Raleway",sans-serif;
+        width: 70%;
     }
     .intro p{
         margin-left: auto; 
         margin-right: auto; 
-        font-size: 1.2em;
+        font-size: 1.0em;
         line-height: 1.8rem;
-        width:85%;
+        width:70%;
     }
     /* Curved background image and grided icons */
     .background-body {
