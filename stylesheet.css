@@ -289,7 +289,7 @@ footer{
     
     /* The Navigation menu */
     .nav-bar{
-        width: 95%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         margin-top: 5%;
