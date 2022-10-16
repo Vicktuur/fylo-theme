@@ -306,6 +306,7 @@ footer{
     }
     .hamburger {
         display: none;
+        margin-right: 10%;
     }
     .nav ul {
         display: flex;
