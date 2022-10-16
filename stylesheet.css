@@ -6,29 +6,34 @@
 body{
     margin: 0;
     padding: 0;
-    background:hsl(217, 28%, 15%) ;
+    background:hsl(217, 28%, 15%);
     color: white;
     font-family: "Open Sans", sans-serif;
     width: 100%;
 }
 /* The Navigation menu */
 .nav-bar{
-    width: 95%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding: 20px;
+    background:hsl(217, 28%, 15%) ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
-.header-logo{
-    padding-left: 40px;
+.hamburger {
+    display: none;
 }
 .nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 .nav ul a{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    padding-left: 50px;
     color: hsl(0, 0%, 100%);
 }
 .nav ul li a:hover {
@@ -285,14 +290,66 @@ footer{
 }
 
 /* Mobile view*/
-@media (max-width: 480px){
-    
+
+@media (max-width: 800px){
     /* The Navigation menu */
     .nav-bar{
-        width: 80%;
         display: flex;
         justify-content: space-between;
-        margin-top: 5%;
+        padding: 20px;
+        padding-left: 0;
+    }
+    .nav-bar img {
+        padding-left: 20px;
+        width: 100px;
+        height: auto;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav {
+        position: fixed;
+        right: 100%;
+        top: 70px;
+        gap:20px;
+        flex-direction: column;
+        background:hsl(217, 28%, 15%);
+        opacity: .8;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav.active {
+       right: 0; 
     }
     .header-logo{
         width: 35%;
@@ -427,5 +484,4 @@ footer{
     .social-media {
         text-align: center;
     }
-
 }
