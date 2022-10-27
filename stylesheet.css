@@ -291,7 +291,7 @@ footer{
 
 /* Mobile view*/
 
-@media (max-width: 800px){
+@media (max-width: 768px){
     /* The Navigation menu */
     .nav-bar{
         display: flex;
