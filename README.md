@@ -43,4 +43,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [https://www.frontendmentor.io/profile/Vicktuur]
-- Twitter - [https://www.twitter.com/Victor_Abiye]
+- Twitter - [https://www.twitter.com/vicktuur_]
